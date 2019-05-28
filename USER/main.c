@@ -43,13 +43,13 @@ int main(void)
 	TIM3_Encoder_Init(0xffff,0);      //TIM3编码器模式初始化	
 	TIM_SetCompare3(TIM5,0);   //TIM5_CH3
 	TIM_SetCompare4(TIM5,0);   //TIM5_CH4
-/*
+
 	while(NRF24L01_Check())
 	{
  		delay_ms(350);
 		LED1 =!LED1;
 		LED0=!LED0;
-	}*/
+	}
 	NRF24L01_RX_Mode();
 
 	
